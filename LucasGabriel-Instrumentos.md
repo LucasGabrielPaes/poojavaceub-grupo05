@@ -25,7 +25,6 @@ Ela se divide em três categorias principais: **Cordas**, **Sopros** e **Percuss
 ### Instrumentos de Cordas (herda de Instrumentos)
 - `nome : String` → Nome do instrumento de Percussão.
 - `preco : float` → Valor do instrumento de Percussão.
----
 
 ## Métodos
 - `getPreco() : float` → Retorna o preço do instrumento.  
@@ -36,7 +35,7 @@ Ela se divide em três categorias principais: **Cordas**, **Sopros** e **Percuss
 - `Instrumentos "1" --> "*" Instrumentos de Cordas : tem` → Um instrumento pode incluir vários instrumentos de cordas.
 - `Instrumentos "1" --> "*" Instrumentos de Sopros/Metais : tem` → Um instrumento pode incluir vários instrumentos de sopros/metais.
 - `Instrumentos "1" --> "*" Instrumentos de Percussões : tem` → Um instrumento pode incluir vários instrumentos de percussão.
-
+---
 # Classe Acessório
 No sistema da loja de instrumentos musicais, a classe Acessório representa todos os itens que complementam os instrumentos, como palhetas, estojos, suportes, cabos, afinadores etc.
 Ela herda de Produtos, ou seja, todo acessório também é um produto.
