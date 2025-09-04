@@ -16,7 +16,7 @@ Ela é responsável por manter a relação entre produtos e origem de fornecimen
 ## Papel no Sistema
 Garante o controle da origem dos produtos vendidos pela loja, permitindo consultas e gestão de estoque.
 
-## Diagrama UML Fornecedor
+## Diagrama UML - Fornecedor
 
 ```mermaid
 classDiagram
