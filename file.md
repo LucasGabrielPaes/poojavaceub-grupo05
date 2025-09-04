@@ -10,7 +10,8 @@ Ela é **abstrata** e se especializa em dois tipos principais: **Cliente** (quem
 - `id : int` → Identificador único.  
 - `nome : String` → Nome completo.  
 - `email : String` → E-mail de acesso.  
-- `senha : String` → Senha de autenticação.  
++ `login() boolean : String` → Login de autenticação.
++ `logout() void : String ` → Logout do usuario
 
 ### Cliente (herda de Usuário)
 - `endereco : String` → Endereço de entrega.  
