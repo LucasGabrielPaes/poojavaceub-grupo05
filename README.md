@@ -13,7 +13,7 @@ O sistema foi modelado em arquivos `.md` individuais, cada um representando uma 
 - [Produto.md](./LucasGabriel-Instrumentos.md)  
 - [Usuario.md](./Miguel-Usuário.md)  
 - [Venda.md](./Duda-Venda.md)  
-- [Pedido.md](./Fellipe.md)  
+- [Pedido.md](./Fellipe_pedidos.md)  
 - [Fornecedor.md](./Fornecedor.md)  
 
 Cada arquivo contém:
