@@ -10,8 +10,8 @@ O objetivo é representar as entidades principais, suas relações e comportamen
 
 O sistema foi modelado em arquivos `.md` individuais, cada um representando uma classe obrigatória:
 
-- [Produto.md](./LucasGabriel(Instrumentos).md)
-- [Usuario.md](./file.md)  
+- [Produto.md](./
+- [Usuario.md](./LucasGabriel(Instrumentos).md)  
 - [Venda.md](./Duda-Venda.md)  
 - [Pedido.md](./Fellipe.md)  
 - [Fornecedor.md](./Fornecedor.md)  
