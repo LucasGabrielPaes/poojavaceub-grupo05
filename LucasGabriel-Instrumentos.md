@@ -40,6 +40,8 @@ Ela se divide em três categorias principais: **Cordas**, **Sopros** e **Percuss
 No sistema da loja de instrumentos musicais, a classe Acessório representa todos os itens que complementam os instrumentos, como palhetas, estojos, suportes, cabos, afinadores etc.
 Ela herda de Produtos, ou seja, todo acessório também é um produto.
 
+---
+
 ### Acessório
 - `categoria: string` → Categoria do acessório (ex: Cordas, Sopros, Percussões).
 
@@ -49,6 +51,8 @@ Ela herda de Produtos, ou seja, todo acessório também é um produto.
 
 ### Relações no Diagrama
 - `Produtos <|-- Acessorio` → Acessório herda de Produtos, então também possui `nome`, `preco`, `getPreco()` e `getDescricao()`
+
+---
 
 ```mermaid
 classDiagram
