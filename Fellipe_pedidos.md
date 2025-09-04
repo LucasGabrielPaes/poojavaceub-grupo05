@@ -7,7 +7,7 @@ Ele é a etapa intermediária entre a escolha dos itens e a finalização da com
 ---
 
 ## Atributos
-- `numero : int` → Identificador único do pedido.  
+- `id : int` → Identificador único do pedido.  
 - `data : Date` → Data em que o pedido foi realizado.  
 - `status : string` → Estado atual do pedido (ex.: “aberto”, “em processamento”, “concluído”).  
 
@@ -22,7 +22,7 @@ Ele é a etapa intermediária entre a escolha dos itens e a finalização da com
 ```mermaid
 classDiagram
   class Pedido {
-    -numero: int
+    -id: int
     -data: date
     -status: string
     +getTotal(): float
