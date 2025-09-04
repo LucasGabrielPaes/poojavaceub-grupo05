@@ -10,8 +10,7 @@ Ela é **abstrata** e se especializa em dois tipos principais: **Cliente** (quem
 - `id : int` → Identificador único.  
 - `nome : String` → Nome completo.  
 - `email : String` → E-mail de acesso.  
-+ `login() boolean : String` → Login de autenticação.
-+ `logout() void : String ` → Logout do usuario
+- `senha : String` → Senha de autenticação.  
 
 ### Cliente (herda de Usuário)
 - `endereco : String` → Endereço de entrega.  
@@ -46,7 +45,8 @@ classDiagram
     -id: int
     -nome: String
     -email: String
-    -senha: String
+    +login() boolean: String
+    +logout() void: String
     +autenticar(email: String, senha: String) boolean
     +visualizarPerfil() String
   }
@@ -70,4 +70,5 @@ classDiagram
 
   Cliente "1" --> "0..*" Pedido : realiza
   Funcionario "1" --> "0..*" Venda : registra
+
 
