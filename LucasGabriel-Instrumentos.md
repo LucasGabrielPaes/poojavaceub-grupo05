@@ -25,12 +25,31 @@ Ela se divide em três categorias principais: **Cordas**, **Sopros** e **Percuss
 ### Instrumentos de Cordas (herda de Instrumentos)
 - `nome : String` → Nome do instrumento de Percussão.
 - `preco : float` → Valor do instrumento de Percussão.
-
 ---
 
 ## Métodos
 - `getPreco() : float` → Retorna o preço do instrumento.  
 - `getDescricao() : String` → Retorna a descrição (nome + preço).
+
+### Relações no Diagrama
+- `Produtos <|-- Instrumentos` → Instrumentos herdam de Produtos.
+- `Instrumentos "1" --> "*" Instrumentos de Cordas : tem` → Um instrumento pode incluir vários instrumentos de cordas.
+- `Instrumentos "1" --> "*" Instrumentos de Sopros/Metais : tem` → Um instrumento pode incluir vários instrumentos de sopros/metais.
+- `Instrumentos "1" --> "*" Instrumentos de Percussões : tem` → Um instrumento pode incluir vários instrumentos de percussão.
+
+# Classe Acessório
+No sistema da loja de instrumentos musicais, a classe Acessório representa todos os itens que complementam os instrumentos, como palhetas, estojos, suportes, cabos, afinadores etc.
+Ela herda de Produtos, ou seja, todo acessório também é um produto.
+
+### Acessório
+- `categoria: string` → Categoria do acessório (ex: Cordas, Sopros, Percussões).
+
+### Métodos
+- `usar(): void` → Executa a ação de usar o acessório.
+- `getCategoria(): string` → Retorna a categoria do acessório.
+
+### Relações no Diagrama
+- `Produtos <|-- Acessorio` → Acessório herda de Produtos, então também possui `nome`, `preco`, `getPreco()` e `getDescricao()`
 
 ```mermaid
 classDiagram
@@ -69,8 +88,16 @@ class instrumentos {
     +getPreco(): float
     +getDescricao(): string
 }
-Produtos --|> instrumentos
+Produtos <|-- instrumentos
 instrumentos "1" --> "*" instrumentos De Cordas : tem
 instrumentos "1" --> "*" instrumentos De Sopros : tem
 instrumentos "1" --> "*" instrumentos De Percussoes : tem
+
+  class Acessorio {
+    -categoria: string
+    +usar(): void
+    +getCategoria(): string
+  }
+
+  Produtos <|-- Acessorio
 ```
