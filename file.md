@@ -13,7 +13,7 @@ Ela é **abstrata** e se especializa em dois tipos principais: **Cliente** (quem
 - `senha : String` → Senha de autenticação.  
 
 ### Cliente (herda de Usuário)
-- `endereco : String` → Endereço de entrega.  
+- `cpf : String` → Cpf do cliente.  
 - `telefone : String` → Contato do cliente.  
 
 ### Funcionário (herda de Usuário)
@@ -24,7 +24,7 @@ Ela é **abstrata** e se especializa em dois tipos principais: **Cliente** (quem
 
 ## Métodos
 ### Usuário
-- `autenticar(email: String, senha: String) : boolean` → Retorna se o login foi válido.  
+- `autenticar( senha: String) : boolean` → Retorna se o login foi válido.  
 - `visualizarPerfil() : String` → Retorna dados básicos do usuário.  
 
 ### Cliente
@@ -33,7 +33,7 @@ Ela é **abstrata** e se especializa em dois tipos principais: **Cliente** (quem
 
 ### Funcionário
 - `registrarVenda(venda: Venda) : boolean` → Registra uma venda no sistema.  
-- `emitirRelatorio() : String` → Gera um resumo das vendas realizadas.  
+- `atenderCliente(cliente: Cliente) : void` → Atende o cliente e processa seu pedido no sistema.  
 
 ---
 
@@ -45,15 +45,15 @@ classDiagram
     -id: int
     -nome: String
     -email: String
-    +login() boolean: String
-    +logout() void: String
-    +autenticar(email: String, senha: String) boolean
+   
+    +autenticar(senha: String) boolean
     +visualizarPerfil() String
   }
 
   class Cliente {
-    -endereco: String
+    -cpf: String
     -telefone: String
+    
     +realizarPedido(produto: Produto, quantidade: int) Pedido
     +consultarHistorico() List<Pedido>
   }
@@ -62,7 +62,7 @@ classDiagram
     -matricula: String
     -cargo: String
     +registrarVenda(venda: Venda) boolean
-    +emitirRelatorio() String
+    +atenderCliente(cliente: Cliente) void
   }
 
   Usuario <|-- Cliente
