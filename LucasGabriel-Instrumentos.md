@@ -49,9 +49,6 @@ Ela herda de Produtos, ou seja, todo acessório também é um produto.
 - `usar(): void` → Executa a ação de usar o acessório.
 - `getCategoria(): string` → Retorna a categoria do acessório.
 
-### Relações no Diagrama
-- `Produtos <|-- Acessorio` → Acessório herda de Produtos, então também possui `nome`, `preco`, `getPreco()` e `getDescricao()`
-
 ---
 
 ```mermaid
