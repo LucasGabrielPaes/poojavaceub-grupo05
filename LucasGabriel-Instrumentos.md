@@ -29,8 +29,8 @@ Ela se divide em três categorias principais: **Cordas**, **Sopros** e **Percuss
 ---
 
 ## Métodos
-- `getPreco() : float` → Retorna se o login foi válido.  
-- `getDescricao() : String` → Retorna dados básicos do usuário.
+- `getPreco() : float` → Retorna o preço do instrumento.  
+- `getDescricao() : String` → Retorna a descrição (nome + preço).
 
 ```mermaid
 classDiagram
