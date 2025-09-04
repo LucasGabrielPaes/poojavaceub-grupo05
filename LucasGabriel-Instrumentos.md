@@ -15,28 +15,28 @@ class instrumentos {
 }
 
 
-  class Cordas {
+  class instrumentos De Cordas {
    -nome: string
     -preco: float
     +getPreco(): float
     +getDescricao(): string
 }
 
- class Sopros {
+ class instrumentos De Sopros {
    -nome: string
     -preco: float
     +getPreco(): float
     +getDescricao(): string
 }
 
- class Percussoes {
+ class instrumentos De Percussoes {
    -nome: string
     -preco: float
     +getPreco(): float
     +getDescricao(): string
 }
 Produtos --|> instrumentos
-instrumentos "1" --> "*" Cordas : tem
-instrumentos "1" --> "*" Sopros : tem
-instrumentos "1" --> "*" Percussoes : tem
+instrumentos "1" --> "*" instrumentos De Cordas : tem
+instrumentos "1" --> "*" instrumentos De Sopros : tem
+instrumentos "1" --> "*" instrumentos De Percussoes : tem
 ```
