@@ -13,7 +13,7 @@ Ela é **abstrata** e se especializa em dois tipos principais: **Cliente** (quem
 - `senha : String` → Senha de autenticação.  
 
 ### Cliente (herda de Usuário)
-- `cpf : int` → Cpf do cliente.  
+- `cpf : String` → Cpf do cliente.  
 - `telefone : String` → Contato do cliente.  
 
 ### Funcionário (herda de Usuário)
@@ -51,7 +51,7 @@ classDiagram
   }
 
   class Cliente {
-    -cpf: int
+    -cpf: String
     -telefone: String
     
     +realizarPedido(produto: Produto, quantidade: int) Pedido
