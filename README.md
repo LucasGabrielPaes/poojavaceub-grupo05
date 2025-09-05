@@ -1,12 +1,12 @@
 # poojavaceub
-# 🎶 Loja de Instrumentos Musicais – Modelagem UML
+#  Loja de Instrumentos Musicais – Modelagem UML
 
 Este projeto é a modelagem de um sistema para uma loja de instrumentos musicais.  
 O objetivo é representar as entidades principais, suas relações e comportamentos, utilizando **UML de Classes com Mermaid**.
 
 ---
 
-## 📌 Estrutura do Projeto
+##  Estrutura do Projeto
 
 O sistema foi modelado em arquivos `.md` individuais, cada um representando uma classe obrigatória:
 
